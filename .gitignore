@@ -1,0 +1,67 @@
+# ===============================
+#  .gitignore for Python + Poetry projects
+# ===============================
+
+# --- Compiled Python files ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual environments ---
+# Poetry often creates a virtualenv in .venv/
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# --- Temporary files ---
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# --- Test and coverage files ---
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+.cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+
+# --- Documentation ---
+docs/_build/
+site/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Local IDE / editor settings ---
+.idea/
+.vscode/
+*.code-workspace
+
+# --- Jupyter notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- OS-specific files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Poetry ---
+# The lock file is usually committed, but you can ignore it if this is a library:
+# poetry.lock
+
+# --- Other generated folders ---
+*.spec
+output/
+reports/
+tmp/
