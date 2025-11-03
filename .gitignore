@@ -65,3 +65,4 @@ desktop.ini
 output/
 reports/
 tmp/
+poetry.lock
