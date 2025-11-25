@@ -57,7 +57,8 @@ def to_dfs(filepath: str) -> Dict[str, pd.DataFrame]:
 
             # Read the numeric block into a DataFrame
             if data_block:  # avoid empty sections
-                df = pd.read_csv(StringIO(data_block), sep=r"\s+", names=columns)
+                df = pd.read_csv(StringIO(data_block), sep=r"\s+", names=columns, on_bad_lines='skip')
+                
                 datasets[sweep_name] = df
 
             # Jump to the next dataset
